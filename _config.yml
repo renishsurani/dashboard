@@ -32,6 +32,9 @@ github_username: 5gif
 repon: 5gif_in.github.io
 branch: main
 
+plugins:
+  - jekyll-feed
+
 collections:
   # whitepaper:
   #   output: true
