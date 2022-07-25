@@ -23,8 +23,8 @@ banner5gacia: >
                  href="https://coaimeetingroom.webex.com/coaimeetingroom/onstage/g.php?MTID=e69a2d7915ff8dc165994531935252533"
                  class="btn btn-primary btn-xl page-scroll">Register</a>
 
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "https://5gindiaforum_demo.in/" # the base hostname & protocol for your site
+baseurl: "/dashboard" # the subpath of your site, e.g. /blog/
+url: "https://renishsurani.github.io" # the base hostname & protocol for your site
 
 twitter_username: 5gindiaforum
 github_username: 5gif
