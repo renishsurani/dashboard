@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  </head>
+  <body>
+    <!-- stackable -->
+<div class="ui huge menu borderless">
+  <a class="active item menu_btn" data-target="#sidebar">
+    <i class="bars icon"></i>
+  </a>
+  <div class="menu item">
+    <h3>Dashboard</h3>
+  </div>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui primary button login_btn">Login</div>
+    </div>
+  </div>
+</div>
+
+    <div class="ui bottom attached segment pushable">
+      <div class="ui inverted vertical sidebar menu">
+  <a class="item">
+    <h4>
+      <i class="fa-solid fa-address-card"></i>
+      <label class="sidebar_labels">Public Results</label>
+    </h4>
+  </a>
+  <a class="item">
+    <h4>
+      <i class="fa-solid fa-compass-drafting"></i>
+      <label class="sidebar_labels">M.2101 (live)</label>
+    </h4>
+  </a>
+  <a class="item">
+    <h4>
+      <i class="fa-solid">5G</i>
+      <label class="sidebar_labels">Cellular (live)</label>
+    </h4>
+  </a>
+  <a class="item">
+    <h4>
+      <i class="fa-brands fa-buromobelexperte"></i>
+      <label class="sidebar_labels">ITU-R Models(live)</label>
+    </h4>
+  </a>
+  <a class="item">
+    <h4>
+      <i class="fa-solid fa-business-time"></i>
+      <label class="sidebar_labels">Jobs History</label>
+    </h4>
+  </a>
+  <a class="item">
+    <h4>
+      <label class="sidebar_labels">Submit SLS</label>
+    </h4>
+  </a>
+</div>
+
+      <div class="pusher"><div class="ui link cards">
+  <div class="card">
+    <div class="content">
+      <div class="header">Matt Giampietro</div>
+      <div class="meta">
+        <a>Friends</a>
+      </div>
+      <div class="description">
+        Matthew is an interior designer living in New York.
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        Joined in 2013
+      </span>
+      <span>
+        <i class="user icon"></i>
+        75 Friends
+      </span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">Molly</div>
+      <div class="meta">
+        <span class="date">Coworker</span>
+      </div>
+      <div class="description">
+        Molly is a personal assistant living in Paris.
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        Joined in 2011
+      </span>
+      <span>
+        <i class="user icon"></i>
+        35 Friends
+      </span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">Elyse</div>
+      <div class="meta">
+        <a>Coworker</a>
+      </div>
+      <div class="description">
+        Elyse is a copywriter working in New York.
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        Joined in 2014
+      </span>
+      <span>
+        <i class="user icon"></i>
+        151 Friends
+      </span>
+    </div>
+  </div>
+</div>
+
+</div>
+    </div>
+    <!-- <div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    <h2>Login</h2>
+  </div>
+  <div class="content medium">
+    <div class="ui medium image">
+      <img src="/images/avatar/large/chris.jpg">
+    </div>
+    <div class="description">
+      <div class="ui header">We've auto-chosen a profile image for you.</div>
+      <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+      <p>Is it okay to use this photo?</p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black deny button">
+      Nope
+    </div>
+    <div class="ui positive right labeled icon button">
+      Yep, that's me
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div> -->
+<div class="ui login modal tiny">
+  <i class="close icon"></i>
+  <div class="header"><h2>Login</h2></div>
+  <div class="form-text">
+    <p>Welcome back! Login with your credentials</p>
+  </div>
+  <div class="form_container">
+    <form class="ui form">
+      <div class="field">
+        <label>Email</label>
+        <input type="text" placeholder="Enter your email" required />
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="text" placeholder="Enter your password" required />
+      </div>
+      <!-- <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" tabindex="0" class="hidden" />
+          <label>I agree to the Terms and Conditions</label>
+        </div>
+      </div> -->
+      <button class="ui button primary" type="submit">Login</button>
+      <button class="ui button" type="reset">Reset</button>
+      <div class="content">
+        Dont have an account? <a class="signup_btn">Sign Up</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="ui signup modal tiny">
+  <i class="close icon"></i>
+  <div class="header"><h2>Sing up</h2></div>
+  <div class="form-text">
+    <p>Create an Account</p>
+  </div>
+  <div class="form_container">
+    <form class="ui form">
+      <div class="field">
+        <label>Email</label>
+        <input type="text" placeholder="Enter your email" required />
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="text" placeholder="Enter your password" required />
+      </div>
+      <div class="field">
+        <label>Confirm Password</label>
+        <input type="text" placeholder="Re-Enter your password" required />
+      </div>
+      <!-- <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" tabindex="0" class="hidden" />
+          <label>I agree to the Terms and Conditions</label>
+        </div>
+      </div> -->
+      <button class="ui button primary" type="submit">Sign Up</button>
+      <button class="ui button" type="reset">Reset</button>
+      <div class="content">
+        Already have an account? <a class="login_btn">Login</a>
+      </div>
+    </form>
+  </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+  integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI="
+  crossorigin="anonymous"
+></script>
+<script src="/js/main.js"></script>
+<!-- <script>
+    $(".sidebar").on("click", function () {
+    console.log("hello");
+});
+</script> -->
+
+  </body>
+</html>

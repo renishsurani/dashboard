@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ site.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include navbar.html %}
+
+    <div class="ui bottom attached segment pushable">
+      {% include sidebar.html %}
+      <div class="pusher">{% include card.html %}</div>
+    </div>
+    {% include login-signup.html %}
+    {%include script.html%}
+  </body>
+</html>
