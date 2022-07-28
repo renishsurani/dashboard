@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include navbar.html %}
+
+    <div class="ui bottom attached segment">
+      {% include sidebar.html %}
+      <div class="pusher" style="margin: 2rem 10%;">{{ content }}</div>
+    </div>
+    {%include script.html%}
+  </body>
+</html>
