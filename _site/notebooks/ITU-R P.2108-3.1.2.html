@@ -22,7 +22,8 @@
   </div>
   <div class="right menu">
     <div class="item">
-      <div class="ui primary button login_btn">Login</div>
+      <div class="ui primary button login_btn" id="login">Login</div>
+      <div class="ui primary button" id="logout" style="display: none;">Log Out</div>
     </div>
   </div>
 </div>
@@ -123,6 +124,126 @@
   integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI="
   crossorigin="anonymous"
 ></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+  } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js";
+  import {
+    getFirestore,
+    collection,
+  } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDtWp1rVyhbOAtibGwmZ2HDUUXEXKlmRRc",
+    authDomain: "dashboard-login-4d327.firebaseapp.com",
+    projectId: "dashboard-login-4d327",
+    storageBucket: "dashboard-login-4d327.appspot.com",
+    messagingSenderId: "235309877592",
+    appId: "1:235309877592:web:2579b956844f03da45fd2d",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth();
+  const db = getFirestore();
+
+  // settings({ timestampsInSnapshots: true });
+
+  const guideList = document.querySelector(".guides");
+  const loggedInLinks = document.querySelectorAll(".logged-in");
+  const loggedOutLinks = document.querySelectorAll(".logged-out");
+  // const accountDetails = document.querySelector('.account-details');
+  // const loginlist = document.querySelector('.containerList');
+
+  const setupUI = (user) => {
+    if (user) {
+      loggedInLinks.forEach((item) => (item.style.display = "block"));
+      loggedOutLinks.forEach((item) => (item.style.display = "none"));
+    } else {
+      loggedInLinks.forEach((item) => (item.style.display = "none"));
+      loggedOutLinks.forEach((item) => (item.style.display = "block"));
+    }
+  };
+
+  //listen for auth status changes
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      setupUI(user);
+    } else {
+      setupUI();
+    }
+  });
+
+  // signup
+
+  const signupForm = document.querySelector("#ui_form_signup");
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // get user info
+    const email = signupForm["signup-email"].value;
+    const password = signupForm["signup-password"].value;
+
+    // sign up the user
+    createUserWithEmailAndPassword(auth, email, password).then((cred) => {
+      console.log(cred);
+      const modal = document.querySelector("#modal-signup");
+      signupForm.reset();
+      $(".ui.signup").modal("hide");
+      document.querySelector("#maindiv_cards").style.display = "block";
+      document.querySelector("#maindiv_cards_default").style.display = "none";
+      document.querySelector("#logout").style.display = "block";
+      document.querySelector("#login").style.display = "none";
+    });
+  });
+
+  // logout
+  const logout = document.querySelector("#logout");
+  logout.addEventListener("click", (e) => {
+    e.preventDefault();
+    auth.signOut().then(() => {
+      console.log("user signed out");
+      $(".ui.login").modal("hide");
+      document.querySelector("#maindiv_cards").style.display = "none";
+      document.querySelector("#maindiv_cards_default").style.display = "block";
+      document.querySelector("#logout").style.display = "none";
+      document.querySelector("#login").style.display = "block";
+    });
+  });
+
+  //login
+  const loginForm = document.querySelector("#ui_form_login");
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // get user info
+    const email = loginForm["login-email"].value;
+    const password = loginForm["login-password"].value;
+
+    signInWithEmailAndPassword(auth, email, password).then((cred) => {
+      console.log(cred.user);
+      const modal = document.querySelector("#modal-login");
+      loginForm.reset();
+      $(".ui.login").modal("hide");
+      document.querySelector("#maindiv_cards").style.display = "block";
+      document.querySelector("#maindiv_cards_default").style.display = "none";
+      document.querySelector("#logout").style.display = "block";
+      document.querySelector("#login").style.display = "none";
+      // $("#logout").displaybtn('block');
+      // $("#login").displaybtn('none');
+    });
+  });
+</script>
 <script src="js/main.js"></script>
 <!-- <script>
     $(".sidebar").on("click", function () {

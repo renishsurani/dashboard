@@ -22,7 +22,8 @@
   </div>
   <div class="right menu">
     <div class="item">
-      <div class="ui primary button login_btn">Login</div>
+      <div class="ui primary button login_btn" id="login">Login</div>
+      <div class="ui primary button" id="logout" style="display: none;">Log Out</div>
     </div>
   </div>
 </div>
@@ -66,70 +67,105 @@
   </a>
 </div>
 
-      <div class="pusher"><div class="ui link cards">
-  <div class="card">
-    <div class="content">
-      <div class="header">Matt Giampietro</div>
-      <div class="meta">
-        <a>Friends</a>
+      <div class="pusher"><div class="card-container" id="maindiv_cards_default" style="display:block ;">
+  <div class="ui raised link cards">
+    <a class="ui content" href="notebooks/ITU-R P.2108-3.1.2.html">
+      <div class="card">
+        <div class="content">
+          <h2>ITU-R P.2108</h2>
+          <div>
+            <p>Height gain terminal correction model</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <!-- <span class="right floated"><a href="#"><h5 class="card-view-btn">Visit</h5></a></span> -->
+          <span>
+            <i class="user icon"></i>
+            <a href="https://observablehq.com/@gurazeez16/itu-r-p2108">gurazeez16</a>
+          </span>
+        </div>
       </div>
-      <div class="description">
-        Matthew is an interior designer living in New York.
-      </div>
-    </div>
-    <div class="extra content">
-      <span class="right floated">
-        Joined in 2013
-      </span>
-      <span>
-        <i class="user icon"></i>
-        75 Friends
-      </span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <div class="header">Molly</div>
-      <div class="meta">
-        <span class="date">Coworker</span>
-      </div>
-      <div class="description">
-        Molly is a personal assistant living in Paris.
-      </div>
-    </div>
-    <div class="extra content">
-      <span class="right floated">
-        Joined in 2011
-      </span>
-      <span>
-        <i class="user icon"></i>
-        35 Friends
-      </span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <div class="header">Elyse</div>
-      <div class="meta">
-        <a>Coworker</a>
-      </div>
-      <div class="description">
-        Elyse is a copywriter working in New York.
-      </div>
-    </div>
-    <div class="extra content">
-      <span class="right floated">
-        Joined in 2014
-      </span>
-      <span>
-        <i class="user icon"></i>
-        151 Friends
-      </span>
-    </div>
+    </a>
   </div>
 </div>
+<div class="card-container" id="maindiv_cards" style="display:none ;">
+  <div class="ui raised link cards">
+    <a class="ui content" href="notebooks/ITU-R P.2108-3.1.2.html">
+      <div class="card">
+        <div class="content">
+          <h2>ITU-R P.2108</h2>
+          <div>
+            <p>Height gain terminal correction model</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <!-- <span class="right floated"><a href="#"><h5 class="card-view-btn">Visit</h5></a></span> -->
+          <span>
+            <i class="user icon"></i>
+            <a href="https://observablehq.com/@gurazeez16/itu-r-p2108">gurazeez16</a>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a class="ui content" href="notebooks/ITU-R P.2108-3.2.2.html">
+      <div class="card">
+        <div class="content">
+          <h2>ITU-R P.2108</h2>
+          <div>
+            <p>Statistical clutter loss model for terrestrial paths</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <!-- <span class="right floated"> Joined in 2014 </span> -->
+          <span>
+            <i class="user icon"></i>
+            <a href="https://observablehq.com/@gurazeez16/itu-r-p2108">gurazeez16</a>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a class="ui content" href="notebooks/ITU-R P.2108-3.3.2.html">
+      <div class="card">
+        <div class="content">
+          <h2>ITU-R P.2108</h2>
+          <div>
+            <p>Earth-space and Aeronautical statistical clutter loss model</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <!-- <span class="right floated"> Joined in 2014 </span> -->
+          <span>
+            <i class="user icon"></i>
+            <a href="https://observablehq.com/@gurazeez16/itu-r-p2108">gurazeez16</a>
+          </span>
+        </div>
+      </div>
+    </a>
 
-</div>
+    <!-- <iframe width="100%" height="296" frameborder="0"
+    src="https://observablehq.com/embed/@gurazeez16/itu-r-p2108?cells=viewof+Inps%2CAdditional_Loss%2Cviewof+Ctype"></iframe>
+    <iframe width="100%" height="105" frameborder="0"
+    src="https://observablehq.com/embed/@gurazeez16/itu-r-p2108?cells=Sample1loss"></iframe> -->
+    <!-- <iframe width="100%" height="342" frameborder="0"
+      src="https://observablehq.com/embed/@gurazeez16/itu-r-p2108?cells=Sample1loss%2Cviewof+Inps%2Cviewof+Ctype%2CAdditional_Loss"></iframe> -->
+    <!-- <div id="observablehq-viewof-Inps-2bcf71f9"></div>
+<div id="observablehq-viewof-Ctype-2bcf71f9"></div>
+<div id="observablehq-Additional_Loss-2bcf71f9"></div>
+<div id="observablehq-Sample1loss-2bcf71f9"></div>
+<p>Credit: <a href="https://observablehq.com/@gurazeez16/itu-r-p2108">ITU-R P.2108 by gurazeez16</a></p>
+
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/76d3d1a9f5e4d386.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof Inps") return new Inspector(document.querySelector("#observablehq-viewof-Inps-2bcf71f9"));
+  if (name === "viewof Ctype") return new Inspector(document.querySelector("#observablehq-viewof-Ctype-2bcf71f9"));
+  if (name === "Additional_Loss") return new Inspector(document.querySelector("#observablehq-Additional_Loss-2bcf71f9"));
+  if (name === "Sample1loss") return new Inspector(document.querySelector("#observablehq-Sample1loss-2bcf71f9"));
+});
+</script> -->
+  </div>
+</div></div>
     </div>
     <!-- <div class="ui modal">
   <i class="close icon"></i>
@@ -158,19 +194,21 @@
 </div> -->
 <div class="ui login modal tiny">
   <i class="close icon"></i>
-  <div class="header"><h2>Login</h2></div>
+  <div class="header">
+    <h2>Login</h2>
+  </div>
   <div class="form-text">
     <p>Welcome back! Login with your credentials</p>
   </div>
   <div class="form_container">
-    <form class="ui form">
+    <form class="ui form" id="ui_form_login">
       <div class="field">
         <label>Email</label>
-        <input type="text" placeholder="Enter your email" required />
+        <input type="text" id="login-email" placeholder="Enter your email" required />
       </div>
       <div class="field">
         <label>Password</label>
-        <input type="text" placeholder="Enter your password" required />
+        <input type="text" id="login-password" placeholder="Enter your password" required />
       </div>
       <!-- <div class="field">
         <div class="ui checkbox">
@@ -189,19 +227,21 @@
 
 <div class="ui signup modal tiny">
   <i class="close icon"></i>
-  <div class="header"><h2>Sing up</h2></div>
+  <div class="header">
+    <h2>Sign up</h2>
+  </div>
   <div class="form-text">
     <p>Create an Account</p>
   </div>
   <div class="form_container">
-    <form class="ui form">
+    <form class="ui form" id="ui_form_signup">
       <div class="field">
         <label>Email</label>
-        <input type="text" placeholder="Enter your email" required />
+        <input type="text" id="signup-email" placeholder="Enter your email" required />
       </div>
       <div class="field">
         <label>Password</label>
-        <input type="text" placeholder="Enter your password" required />
+        <input type="text" id="signup-password" placeholder="Enter your password" required />
       </div>
       <div class="field">
         <label>Confirm Password</label>
@@ -235,6 +275,126 @@
   integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI="
   crossorigin="anonymous"
 ></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+  } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js";
+  import {
+    getFirestore,
+    collection,
+  } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDtWp1rVyhbOAtibGwmZ2HDUUXEXKlmRRc",
+    authDomain: "dashboard-login-4d327.firebaseapp.com",
+    projectId: "dashboard-login-4d327",
+    storageBucket: "dashboard-login-4d327.appspot.com",
+    messagingSenderId: "235309877592",
+    appId: "1:235309877592:web:2579b956844f03da45fd2d",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth();
+  const db = getFirestore();
+
+  // settings({ timestampsInSnapshots: true });
+
+  const guideList = document.querySelector(".guides");
+  const loggedInLinks = document.querySelectorAll(".logged-in");
+  const loggedOutLinks = document.querySelectorAll(".logged-out");
+  // const accountDetails = document.querySelector('.account-details');
+  // const loginlist = document.querySelector('.containerList');
+
+  const setupUI = (user) => {
+    if (user) {
+      loggedInLinks.forEach((item) => (item.style.display = "block"));
+      loggedOutLinks.forEach((item) => (item.style.display = "none"));
+    } else {
+      loggedInLinks.forEach((item) => (item.style.display = "none"));
+      loggedOutLinks.forEach((item) => (item.style.display = "block"));
+    }
+  };
+
+  //listen for auth status changes
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      setupUI(user);
+    } else {
+      setupUI();
+    }
+  });
+
+  // signup
+
+  const signupForm = document.querySelector("#ui_form_signup");
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // get user info
+    const email = signupForm["signup-email"].value;
+    const password = signupForm["signup-password"].value;
+
+    // sign up the user
+    createUserWithEmailAndPassword(auth, email, password).then((cred) => {
+      console.log(cred);
+      const modal = document.querySelector("#modal-signup");
+      signupForm.reset();
+      $(".ui.signup").modal("hide");
+      document.querySelector("#maindiv_cards").style.display = "block";
+      document.querySelector("#maindiv_cards_default").style.display = "none";
+      document.querySelector("#logout").style.display = "block";
+      document.querySelector("#login").style.display = "none";
+    });
+  });
+
+  // logout
+  const logout = document.querySelector("#logout");
+  logout.addEventListener("click", (e) => {
+    e.preventDefault();
+    auth.signOut().then(() => {
+      console.log("user signed out");
+      $(".ui.login").modal("hide");
+      document.querySelector("#maindiv_cards").style.display = "none";
+      document.querySelector("#maindiv_cards_default").style.display = "block";
+      document.querySelector("#logout").style.display = "none";
+      document.querySelector("#login").style.display = "block";
+    });
+  });
+
+  //login
+  const loginForm = document.querySelector("#ui_form_login");
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // get user info
+    const email = loginForm["login-email"].value;
+    const password = loginForm["login-password"].value;
+
+    signInWithEmailAndPassword(auth, email, password).then((cred) => {
+      console.log(cred.user);
+      const modal = document.querySelector("#modal-login");
+      loginForm.reset();
+      $(".ui.login").modal("hide");
+      document.querySelector("#maindiv_cards").style.display = "block";
+      document.querySelector("#maindiv_cards_default").style.display = "none";
+      document.querySelector("#logout").style.display = "block";
+      document.querySelector("#login").style.display = "none";
+      // $("#logout").displaybtn('block');
+      // $("#login").displaybtn('none');
+    });
+  });
+</script>
 <script src="js/main.js"></script>
 <!-- <script>
     $(".sidebar").on("click", function () {

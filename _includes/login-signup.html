@@ -25,19 +25,21 @@
 </div> -->
 <div class="ui login modal tiny">
   <i class="close icon"></i>
-  <div class="header"><h2>Login</h2></div>
+  <div class="header">
+    <h2>Login</h2>
+  </div>
   <div class="form-text">
     <p>Welcome back! Login with your credentials</p>
   </div>
   <div class="form_container">
-    <form class="ui form">
+    <form class="ui form" id="ui_form_login">
       <div class="field">
         <label>Email</label>
-        <input type="text" placeholder="Enter your email" required />
+        <input type="text" id="login-email" placeholder="Enter your email" required />
       </div>
       <div class="field">
         <label>Password</label>
-        <input type="text" placeholder="Enter your password" required />
+        <input type="text" id="login-password" placeholder="Enter your password" required />
       </div>
       <!-- <div class="field">
         <div class="ui checkbox">
@@ -56,19 +58,21 @@
 
 <div class="ui signup modal tiny">
   <i class="close icon"></i>
-  <div class="header"><h2>Sing up</h2></div>
+  <div class="header">
+    <h2>Sign up</h2>
+  </div>
   <div class="form-text">
     <p>Create an Account</p>
   </div>
   <div class="form_container">
-    <form class="ui form">
+    <form class="ui form" id="ui_form_signup">
       <div class="field">
         <label>Email</label>
-        <input type="text" placeholder="Enter your email" required />
+        <input type="text" id="signup-email" placeholder="Enter your email" required />
       </div>
       <div class="field">
         <label>Password</label>
-        <input type="text" placeholder="Enter your password" required />
+        <input type="text" id="signup-password" placeholder="Enter your password" required />
       </div>
       <div class="field">
         <label>Confirm Password</label>
